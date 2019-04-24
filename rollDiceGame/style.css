@@ -1,0 +1,56 @@
+.body{
+
+  background-color: #987654;
+}
+
+.wrapper{
+  display: grid;
+  background-color:#eeeddd;
+}
+
+.wrapper > div:nth-child(odd){
+  background: #ddd;
+}
+
+.start{
+  float: 100%;
+}
+
+.text{
+  text-align:center;
+}
+
+.players{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+  grid-gap:3em;
+  background: #eee;
+}
+
+
+.current{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.roll{
+  display: grid;
+  grid-auto-rows: minmax(150px,auto);
+  float: 100%;
+
+  }
+#dice{
+  display:grid;
+  text-align: center;
+  background-image: url("dice.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-auto-rows: minmax(150px,auto);
+  font-size: 40px;
+}
+
+.active{
+  background-color:#f44298;
+  color: black;
+}
